@@ -11840,7 +11840,48 @@ Date: March 21, 2018</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Coming shortly...</p>
+<p><strong>1. Install Anaconda</strong></p>
+<p>Run in terminal:</p>
+
+<pre><code>terminal
+conda install -c anaconda python</code></pre>
+<p>That's kind of it.</p>
+<p>To then open a jupyter notebook navigate to the directory where it is located (in terminal) and enter the text:</p>
+
+<pre><code>terminal
+jupyter notebook</code></pre>
+<p><em>Make sure that the Kernel you are using is Python 3.</em></p>
+<p>If you are not sure then run this in your notebook:</p>
+<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sys</span>
+<span class="n">sys</span><span class="o">.</span><span class="n">version</span>
+</pre></div>
+<hr>
+<p><strong>2. Install nb Extensions for Jupyter</strong></p>
+<p>This adds some additional functionality (like being able to use ToC). Enter (in terminal):</p>
+
+<pre><code>terminal
+pip install jupyter_contrib_nbextensions</code></pre>
+<p>and then</p>
+
+<pre><code>terminal
+jupyter contrib nbextension install --user</code></pre>
+<p>then enable a couple of extensions that this notebook uses:</p>
+
+<pre><code>terminal
+jupyter nbextension enable toc2/main</code></pre>
+<p>and</p>
+
+<pre><code>terminal
+jupyter nbextension enable collapsible_headings/main</code></pre>
+<hr>
+<p><strong>3. Notebook Basics</strong></p>
+<p>A <a href="http://nbviewer.jupyter.org/github/jupyter/notebook/blob/master/docs/source/examples/Notebook/Notebook%20Basics.ipynb">quick intro</a> to get you up and running.</p>
+<p>tl:dr</p>
+<ul>
+<li>run cell = shift + enter</li>
+<li>new cell above/below = a/b</li>
+<li>switch between markdown and code = m (make sure you click outside the cell or press esc first)</li>
+</ul>
 
 </div>
 </div>
@@ -15834,7 +15875,7 @@ yrGKmQAAAABJRU5ErkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[586]:</div>
+<div class="prompt input_prompt">In&nbsp;[587]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">sim_choice_many_new</span><span class="p">(</span><span class="n">S</span><span class="p">,</span> <span class="n">M</span><span class="p">,</span> <span class="n">w_vec</span><span class="p">,</span> <span class="n">time_steps</span><span class="p">,</span> <span class="n">noise</span><span class="p">,</span> <span class="n">sim_num</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
@@ -17275,7 +17316,7 @@ krQF/x83Z0Ens0P54gAAAABJRU5ErkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="prompt input_prompt">In&nbsp;[590]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">M</span> <span class="o">=</span> <span class="p">{}</span>    <span class="c1"># make empty dict</span>
@@ -17306,7 +17347,7 @@ krQF/x83Z0Ens0P54gAAAABJRU5ErkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="prompt input_prompt">In&nbsp;[591]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># maybe make labeled dataframes (with option names and attribute names)</span>
@@ -17336,6 +17377,42 @@ krQF/x83Z0Ens0P54gAAAABJRU5ErkJggg==
 <h2 id="Similarity">Similarity<a class="anchor-link" href="#Similarity">&#182;</a></h2>
 </div>
 </div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>See above for a full example.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[592]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">M_sim1</span> <span class="o">=</span> <span class="n">M</span><span class="p">[</span><span class="s1">&#39;sim_1&#39;</span><span class="p">]</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">similarity_1</span> <span class="o">=</span> <span class="n">sim_choice_many_new</span><span class="p">(</span><span class="n">S</span><span class="p">,</span> <span class="n">M_sim1</span><span class="p">,</span> <span class="n">w_vec_new</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">10000</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
