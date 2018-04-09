@@ -3,6 +3,5 @@ numpy==1.13.3
 pandas==0.21.0
 plotly==2.2.3
 scipy==1.0.0
-math==9.2
 collections==8.3
 random==9.6
