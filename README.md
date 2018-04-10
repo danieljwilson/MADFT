@@ -12,7 +12,7 @@ Project paper is at this [link](https://docs.google.com/document/d/1o0HggTdEodKi
 
 View a static html converted file at this [link](https://rawgit.com/danieljwilson/MADFT/master/MADFT%20Notebook.html).
 
-Even better you can view the iPython Notebook and run the code interactively here[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/danieljwilson/MADFT/master).
+Even better you can view the iPython Notebook and run the code interactively here (click the button)[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/danieljwilson/MADFT/master).
 
 *Click on the file with extension .ipynb and then press `SHIFT + RETURN` to run each cell.*
 
